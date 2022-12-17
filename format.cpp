@@ -40,7 +40,7 @@ void func(std::string s, T t) {
     std::cout << substr_v << t;
     auto substr_v2 = s.substr(i + 2, (s.size() - i));
     std::cout << substr_v2;
-
+    std::cout << "\n";
 }
 
 int j = 0;
