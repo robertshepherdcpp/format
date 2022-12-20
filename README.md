@@ -1,7 +1,11 @@
 # format
 A simple formatting library.
 
-Some examples of use are the following. Bear in mind all the functionality is in the `format` namespace.
+Some examples of use are the following. Bear in mind all the functionality is in the `format` namespace. Also to include use:
+
+```C++
+#include<https://raw.githubusercontent.com/robertshepherdcpp/format/main/format.cpp>
+```
 
 Here is the first basic usage.
 
