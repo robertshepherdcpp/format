@@ -4,14 +4,13 @@
 
 namespace format {
 
-    auto find_braces(std::string s_p) 
+    auto find_braces(std::string s_p)
     {
-        for(int i = 0; i < s_p.size(); i++) 
+        for(int i = 0; i < s_p.size(); i++)
         {
             if(s_p[i] == '{' and s_p[i + 1] == '}') {
                 return i;
             }
-
         }
         return -1;
     }
@@ -43,12 +42,10 @@ void func(std::string s, T t) {
     std::cout << "\n";
 }
 
-int j = 0;
-int c = 0;
-
 template<typename T, typename... Ts>
 void func(std::string s, T t, Ts... ts) {
     auto x = find_braces(s);
+    int j = 0;
     j = x;
     if(j != -1) {
     auto sub_str_v = s.substr(0, j);
