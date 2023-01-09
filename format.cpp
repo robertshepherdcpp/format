@@ -11,7 +11,6 @@ namespace format {
             if(s_p[i] == '{' and s_p[i + 1] == '}') {
                 return i;
             }
-
         }
         return -1;
     }
@@ -42,9 +41,6 @@ void func(std::string s, T t) {
     std::cout << substr_v2;
     std::cout << "\n";
 }
-
-
-
 
 template<typename T, typename... Ts>
 void func(std::string s, T t, Ts... ts) {
